@@ -30,12 +30,12 @@ Dal terminale di VSCode lancio
 vue create .
 ```
 ### Opzioni da selezionare
-✅ Manually select features
-✅ Aggiungo CSS Pre-processors
-✅  Versione 2.x
-✅ Sass/SCSS (with dart-sass)
-✅ ESLint with error prevention only
-✅ Config for Babel, ESLint ect. in dedicated config files
+- ✅ Manually select features
+- ✅ Aggiungo CSS Pre-processors
+- ✅  Versione 2.x
+- ✅ Sass/SCSS (with dart-sass)
+- ✅ ESLint with error prevention only
+- ✅ Config for Babel, ESLint ect. in dedicated config files
 Per avviare il server di sviluppo:
 ```bash
 npm run serve
@@ -97,9 +97,10 @@ module.exports = {
 
 ### Visualizzare immagine con percorso locale salvato nei data del component
 Potrebbe capitarci di voler utilizzare il valore di una variabile come src di un tag immagine.
-❌ Esempio non funzionante:
 
-```js
+❌ **Esempio non funzionante:**
+
+```html
 <template>
     <div>
         <img :src="localImage">
@@ -120,8 +121,8 @@ export default {
 In questo caso l'immagine non verrebbe visualizzata in quanto Webpack, il module bundler che compila il nostro sorgente in codice comprensibile dal browser, non trasforma correttamente il percorso dell'immagine in /img/image.png.
 Per forzare questo comportamento possiamo utilizzare la funzione **require()** passandogli come argomento il percorso all'immagine.
 
-✅ Esempio funzionante:
-```js
+✅ **Esempio funzionante:**
+```html
 <template>
     <div>
         <img :src="localImage">
