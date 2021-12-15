@@ -18,7 +18,7 @@ vue --version
 ```
 
 > ⚠️ Utenti Windows
-> Chiudere e riaprire il terminare come amministratori e lanciare il seguente comando
+> Chiudere e riaprire il terminale come amministratori e lanciare il seguente comando
 
 ```bash
 Set-ExecutionPolicy remotesigned
