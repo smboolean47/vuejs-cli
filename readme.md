@@ -72,7 +72,45 @@ Ora posso utilizzare le icone nei miei componenti.
 [Link alla Fonte](https://medium.com/front-end-weekly/how-to-use-fon-awesome-5-on-vuejs-project-ff0f28310821)
 
 ### Bootstrap 5
-TBD
+Installo la libreria tramite npm
+```bash
+npm i bootstrap
+```
+
+Nel nostro file global.scss o direttamente nel componente App.vue possiamo scegliere di importare tutta la libreria
+```css
+@import '~bootstrap/scss/bootstrap.scss';
+```
+o solo la griglia
+```css
+@import '~bootstrap/scss/bootstrap-grid.scss';
+```
+
+### Axios
+Installo la libreria tramite npm
+```bash
+npm i axios
+```
+
+In ogni componente dove ho bisogno di fare chiamare Ajax importo la libreria
+```js
+import axios from 'axios';
+```
+
+Nel Hook *created()* eseguo la chiamata.
+```js
+created() {
+    axios.get('URL_ENDPOINT_API')
+    .then((response) => {
+        // handle success
+        console.log(response);
+    })
+    .catch(function (error) {
+        // handle error
+        console.log(error);
+    });
+}
+```
 
 ## Sviluppo Locale
 Per avviare il server di sviluppo locale
